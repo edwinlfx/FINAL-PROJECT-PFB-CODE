@@ -18,4 +18,6 @@ for current_day in data:
         deficits.append(difference)
     previous_day = current_day
 if len(deficits) == 0:
+    fp = Path.cwd()/"summary_report.txt"
+    with fp.open(mode = "a", encoding = "UTF-8") as file:
     
