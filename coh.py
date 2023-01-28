@@ -27,3 +27,4 @@ else:
         report.append(f"[CASH DEFICIT] DAY: {days[index]}, AMOUNT: USD{deficits[index]}\n")
     fp = Path.cwd()/"summary_report.txt"
     with fp.open(mode = "a", encoding = "UTF-8") as file:
+        file.writelines(report)
