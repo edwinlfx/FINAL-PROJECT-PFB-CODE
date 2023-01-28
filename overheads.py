@@ -12,4 +12,5 @@ with fp.open(mode="r", encoding="UTF-8", newline ="") as file:
 
 highest_overhead = ["", 0]
 for item in overheads:
-    
+    if float(item[1]) > float(highest_overhead[1]):
+        highest_overhead = item
