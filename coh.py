@@ -8,3 +8,4 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     for column in reader:
         data.append([column[0]], [column[1]])
 deficits = []
+days = []
