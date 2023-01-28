@@ -24,4 +24,4 @@ if len(deficits) == 0:
 else:
     report = []
     for index in range(len(deficits)):
-        
+        report.append(f"[CASH DEFICIT] DAY: {days[index]}, AMOUNT: USD{deficits[index]}\n")
