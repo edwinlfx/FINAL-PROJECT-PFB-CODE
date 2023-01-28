@@ -21,3 +21,4 @@ if len(deficits) == 0:
     fp = Path.cwd()/"summary_report.txt"
     with fp.open(mode = "a", encoding = "UTF-8") as file:
         file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+else:
