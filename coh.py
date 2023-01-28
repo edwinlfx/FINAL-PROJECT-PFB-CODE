@@ -10,3 +10,5 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
 deficits = []
 days = []
 previous_day = [0, 0]
+for current_day in data:
+    
