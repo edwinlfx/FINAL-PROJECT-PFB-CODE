@@ -9,3 +9,4 @@ with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         data.append([column[0]], [column[1]])
 deficits = []
 days = []
+previous_day = [0, 0]
