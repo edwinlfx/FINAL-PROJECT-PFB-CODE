@@ -15,3 +15,4 @@ for current_day in data:
         day_number = current_day[0]
         difference = float(previous_day[1]) - float(current_day[1])
         days.append(day_number)
+        deficits.append(difference)
