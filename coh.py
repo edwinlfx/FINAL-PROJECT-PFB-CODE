@@ -17,3 +17,5 @@ for current_day in data:
         days.append(day_number)
         deficits.append(difference)
     previous_day = current_day
+if len(deficits) == 0:
+    
