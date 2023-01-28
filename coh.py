@@ -23,3 +23,5 @@ if len(deficits) == 0:
         file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
 else:
     report = []
+    for index in range(len(deficits)):
+        
