@@ -14,3 +14,4 @@ for current_day in data:
     if float(current_day[1]) < float(previous_day[1]):
         day_number = current_day[0]
         difference = float(previous_day[1]) - float(current_day[1])
+        days.append(day_number)
