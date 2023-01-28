@@ -25,3 +25,5 @@ else:
     report = []
     for index in range(len(deficits)):
         report.append(f"[CASH DEFICIT] DAY: {days[index]}, AMOUNT: USD{deficits[index]}\n")
+    fp = Path.cwd()/"summary_report.txt"
+    
