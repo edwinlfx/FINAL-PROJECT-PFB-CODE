@@ -16,3 +16,5 @@ for item in overheads:
         highest_overhead = item
 
 fp=Path.cwd()/"summary_report.txt"
+with fp.open(mode = "w", encoding = "UTF-8") as file:
+    file.write(f"[HIGHEST OVERHEAS] {highest_overhead[0].upper()}: {highest_overhead[1]}%\n")
