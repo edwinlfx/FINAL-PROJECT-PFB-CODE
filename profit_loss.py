@@ -6,3 +6,4 @@ def profitloss_function():
     #create a file path to the csv file 
     fp = Path.cwd()/"IGP CSV"/"profit-and-loss-usd.csv"
     #read csv file using with syntax and .open() to append day number and deficit
+    # saat mode to rin order to asd csv fila
