@@ -25,8 +25,14 @@ def coh_function():
     previous_day = [0, 0]
     #use for loop to iterate over the number of data
     for current_day in data:
+        #use if statement to find out if the cash-on-hand of the current day is lower than the cash-on-hand of the previous day
+        #use float() to convert from string to float when comparing because the net profit would still be a string if not converted 
         if float(current_day[1]) < float(previous_day[1]):
+            #if true, create "day_number" variable to store "current_day" number
             day_number = current_day[0]
+            #create "difference" variable to calculate the cash deficit
+            #use float() to convert strings into floats
+            #"difference" is found by taking previous day cash-on-hand minus current day cash-on-hand
             difference = float(previous_day[1]) - float(current_day[1])
             days.append(day_number)
             deficits.append(difference)
