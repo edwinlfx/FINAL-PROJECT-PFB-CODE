@@ -21,7 +21,8 @@ def profitloss_function():
     days = []
     previous_day = [0,0]
     for current_day in data:
-        if float
+        if float(current_day[1]) < float(previous_day [1]):
+            
    
   
     
