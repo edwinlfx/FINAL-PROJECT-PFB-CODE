@@ -34,7 +34,7 @@ def profitloss_function():
             file.write("[NET PROFIT SURPLUS] NET PROFIT  ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
     else:
         report =[]
-        for index in range
+        for index in range(len(deficits)):
    
   
     
