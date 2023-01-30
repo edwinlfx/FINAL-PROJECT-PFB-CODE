@@ -38,6 +38,7 @@ def profitloss_function():
             report.append(f"[PROFIT DEFICIT] DAY: {days[index]}, AMOMUNT: USD{deficits[index]}\n")
         fp = Path.cwd()/"summary_report.txt"
         with fp.open(mde="a", encdoing="UTF-8") as file:
+            file.writelines(report)
    
   
     
