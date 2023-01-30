@@ -17,6 +17,7 @@ def overhead_function():
         overheads = []
         #use for loop to apphend overhead category and percentage into the overhead empty list
         for column in reader:
+            #column[0] is the overhead category and column[1] is the corresponding percentage of that overhead's category
             overheads.append([column[0], column[1]])
 
     highest_overhead = ["", 0]
