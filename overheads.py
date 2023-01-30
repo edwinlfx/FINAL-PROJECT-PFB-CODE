@@ -20,7 +20,7 @@ def overhead_function():
             #column[0] is the overhead category and column[1] is the corresponding percentage of that overhead's category
             overheads.append([column[0], column[1]])
     
-    #create "highest_overhead" variable as a list variable
+    #create "highest_overhead" variable as a list variable with an empty string and 0 in it
     highest_overhead = ["", 0]
     for item in overheads:
         if float(item[1]) > float(highest_overhead[1]):
