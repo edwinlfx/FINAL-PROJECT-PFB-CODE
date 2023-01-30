@@ -35,4 +35,5 @@ def overhead_function():
     fp=Path.cwd()/"summary_report.txt"
     #overheads portion of the summary report will be wriiten into the txt file using write mode and .write()
     with fp.open(mode = "w", encoding = "UTF-8") as file:
+        #f-string and \n is used to make the overheads portion in the summary report neater and so that it follows format in the assignment brief
         file.write(f"[HIGHEST OVERHEADS] {highest_overhead[0].upper()}: {highest_overhead[1]}%\n")
