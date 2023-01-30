@@ -35,7 +35,7 @@ def profitloss_function():
     else:
         report =[]
         for index in range(len(deficits)):
-            report.append(f"[PROFIT DEFICIT] DAY: 
+            report.append(f"[PROFIT DEFICIT] DAY: {days[index]}, AMOMUNT: USD{deficits[index]}\n")
    
   
     
