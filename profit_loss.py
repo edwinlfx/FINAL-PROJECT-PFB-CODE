@@ -30,7 +30,7 @@ def profitloss_function():
         
     if len(deficits) == 0:
         fp = Path.cwd()/"summary_report.txt"
-            
+        with fp.open(mode="a", econding="UTF-8") as file:
    
   
     
