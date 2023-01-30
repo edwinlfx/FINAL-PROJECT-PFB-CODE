@@ -17,6 +17,8 @@ def profitloss_function():
         
         for column in reader:
             data.append([column[0], column[4]])
+  
+    
             
             
             
