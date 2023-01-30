@@ -32,6 +32,7 @@ def profitloss_function():
             #if true, create day_number variable to store current_day number
             day_number = current_day[0]
             #create difference varirable to calculate the profit deficit
+            #use float () to convert strings to floats
             difference = float(previous_day[1]) - float(current_day[1])
             days.append(day_number)
             deficits.append(difference)
