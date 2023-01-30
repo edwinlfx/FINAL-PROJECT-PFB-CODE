@@ -15,6 +15,7 @@ def overhead_function():
         next(reader)
         #create overheads variable as an empty list to store the category and percentage in the list
         overheads = []
+        #use for loop to apphend overhead category and percentage into the overhead empty list
         for column in reader:
             overheads.append([column[0], column[1]])
 
