@@ -4,7 +4,7 @@ import csv
 #define a profitloss_function() because function will be used in main.py
 def profitloss_function():
     #create a file path to the csv file 
-    fp = Path.cwd()/"csv_reports"/"profit-and-loss-usd.csv"
+    fp = Path.cwd()/"csv_report"/"profit-and-loss-usd.csv"
     #read csv file using with syntax and .open() to append day number and deficit
     #set mode to "r" in order to read csv file
     with fp.open(mode="r", encoding="UTF-8", newline = "") as file:
@@ -29,6 +29,7 @@ def profitloss_function():
         previous_day = current_day
         
     if len(deficits) == 0:
+        fp = Path.cwd()/"summary_report.txt"
             
    
   
