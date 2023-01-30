@@ -31,7 +31,7 @@ def profitloss_function():
     if len(deficits) == 0:
         fp = Path.cwd()/"summary_report.txt"
         with fp.open(mode="a", econding="UTF-8") as file:
-            file.write("[NET PROIT SURPLUS] NET PROFIT  ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+            file.write("[NET PROFIT SURPLUS] NET PROFIT  ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
    
   
     
