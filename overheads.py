@@ -24,6 +24,7 @@ def overhead_function():
     #the highest overhead category and percentage from the overheads list will be apprended into highest overhead list
     highest_overhead = ["", 0]
     #use for loop to iterate over the number of items in the overheads list
+    #the highest overhead category and percentage from the overheads list will be apprended into highest 
     for item in overheads:
         if float(item[1]) > float(highest_overhead[1]):
             highest_overhead = item
