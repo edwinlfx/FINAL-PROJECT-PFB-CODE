@@ -32,6 +32,8 @@ def profitloss_function():
         fp = Path.cwd()/"summary_report.txt"
         with fp.open(mode="a", econding="UTF-8") as file:
             file.write("[NET PROFIT SURPLUS] NET PROFIT  ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+    else:
+        report =[]
    
   
     
