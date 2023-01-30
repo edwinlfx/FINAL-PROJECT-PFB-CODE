@@ -8,3 +8,14 @@ def profitloss_function():
     #read csv file using with syntax and .open() to append day number and deficit
     #set mode to "r" in order to read csv file
     with fp.open(mode="r", encoding="UTF-8", newline = "") as file:
+        reader = csv.reader(file)
+        
+        next(reader)
+        
+        data = []
+        
+        
+        for column in reader:
+            data.append([column[0], column[4]])
+            
+            
