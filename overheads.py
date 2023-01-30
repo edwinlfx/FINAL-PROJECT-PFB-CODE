@@ -13,6 +13,7 @@ def overhead_function():
         reader = csv.reader(file)
         #skip header
         next(reader)
+        #create overheads variable as an empty list to store the category and percentage in the list
         overheads = []
         for column in reader:
             overheads.append([column[0], column[1]])
