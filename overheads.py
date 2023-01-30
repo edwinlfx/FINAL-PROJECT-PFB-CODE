@@ -30,7 +30,8 @@ def overhead_function():
         if float(item[1]) > float(highest_overhead[1]):
             #if true, highest overhead list will be the item from the4 overheads list used for the comparison
             highest_overhead = item
-
+            
+    #create a file to txt file and nae it as summary_report.txt
     fp=Path.cwd()/"summary_report.txt"
     with fp.open(mode = "w", encoding = "UTF-8") as file:
         file.write(f"[HIGHEST OVERHEADS] {highest_overhead[0].upper()}: {highest_overhead[1]}%\n")
