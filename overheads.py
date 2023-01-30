@@ -11,6 +11,7 @@ def overhead_function():
     #set mode to "r" in order to read the csv file
     with fp.open(mode="r", encoding="UTF-8", newline ="") as file:
         reader = csv.reader(file)
+        #skip header
         next(reader)
         overheads = []
         for column in reader:
