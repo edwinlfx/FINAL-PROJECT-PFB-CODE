@@ -11,15 +11,19 @@ def coh_function():
         reader = csv.reader(file)
         #skip header
         next(reader)
-        #create data variable as an empty list to store the day number and amount of cash-on-hand of that day itself in the list
+        #create "data" variable as an empty list to store the day number and amount of cash-on-hand of that day itself in the list
         data = []
         #use for loop to append day number and cash-on-hand of that day itself into the data empty list 
         #column[0] is the day number and column[1] is the corresponding amount of cash-on-hand of that day itself
         for column in reader:
             data.append([column[0]], [column[1]])
+    #create "deficits" variable as an empty list to store deficit amount
     deficits = []
+    #create "days" variable as an empty list to store the day numbers
     days = []
+    #create "previous_day" list variable with 0 as the day number and 0 as the cash-on-hand amount
     previous_day = [0, 0]
+    #use for loop to iterate over the number of data
     for current_day in data:
         if float(current_day[1]) < float(previous_day[1]):
             day_number = current_day[0]
