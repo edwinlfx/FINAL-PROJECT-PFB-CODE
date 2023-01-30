@@ -9,9 +9,9 @@ def profitloss_function():
     #set mode to "r" in order to read csv file
     with fp.open(mode="r", encoding="UTF-8", newline = "") as file:
         reader = csv.reader(file)
-        
+        #skip header
         next(reader)
-        
+        #create data variable as an empty list to store the day number and amount of net profit of that day itself in the list
         data = []
         
         
