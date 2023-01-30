@@ -9,8 +9,12 @@ def coh_function():
     #set mode to "r" in order to read the csv file
     with fp.open(mode="r", encoding="UTF-8", newline="") as file:
         reader = csv.reader(file)
+        #skip header
         next(reader)
+        #create data variable as an empty list to store the day number and amount of cash-on-hand of that day itself in the list
         data = []
+        #use for loop to append day number and cash-on-hand of that day itself into the data empty list 
+        #column[0] is the day number and column[1] is the corresponding amount of cash-on-hand of that day itself
         for column in reader:
             data.append([column[0]], [column[1]])
     deficits = []
