@@ -1,5 +1,7 @@
+#import Path from pathlib and csv module
 from pathlib import Path
 import csv
+#define a cash-on-hand (coh) function() which will be used in main.py 
 def coh_function():
     fp = Path.cwd()/"csv_reports"/"cash-on-hand-usd.csv"
     with fp.open(mode="r", encoding="UTF-8", newline="") as file:
