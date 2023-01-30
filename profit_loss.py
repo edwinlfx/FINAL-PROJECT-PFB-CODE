@@ -27,6 +27,8 @@ def profitloss_function():
             days.append(day_number)
             deficits.append(difference)
         previous_day = current_day
+        
+    if len(deficits) == 0:
             
    
   
