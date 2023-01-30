@@ -24,6 +24,7 @@ def profitloss_function():
     days = []
     #create previous day list variable with 0 as the day number and 0 as the net profit amount
     previous_day = [0,0]
+    #use for loop to iterate over the number of data
     for current_day in data:
         if float(current_day[1]) < float(previous_day [1]):
             day_number = current_day[0]
