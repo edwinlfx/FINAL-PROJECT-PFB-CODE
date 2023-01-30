@@ -19,6 +19,9 @@ def profitloss_function():
             data.append([column[0], column[4]])
     deficits = []
     days = []
+    previous_day = [0,0]
+    for current_day in data:
+        if float
    
   
     
