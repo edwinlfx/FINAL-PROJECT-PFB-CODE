@@ -40,14 +40,29 @@ def coh_function():
             deficits.append(difference)
         #once an iteration is completed, the previous day values will be the current day values
         previous_day = current_day
+    
+    #use if else statement to determine if there is no deficit
+    #if length of deficit is 0 (no items in the deficit list),
+    #cash-on-hand portion on the summary report will display "[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY"
     if len(deficits) == 0:
+        #create a file to txt file and name it as "summary_report.txt"
         fp = Path.cwd()/"summary_report.txt"
+        #cash-on-hand portion of the summary report will be appended into the txt file using append mode and .write()
         with fp.open(mode = "a", encoding = "UTF-8") as file:
             file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+    
+    #else, cash-on-hand portion of report will display the day of the cash deficit and the amount of deficit of that day itself
     else:
+        #create "report" variable as an empty list to store the cash-on-hand report portion of the summary report
         report = []
+        #use for loop to iterate over the range in the length of the deficit list
         for index in range(len(deficits)):
+            #use .append() to append an f-string of the cash-on-hand report portion into the report list 
+            #use f-string and \n to make the cash-on-hand portion in the summary report neater and so that it follows format in the assignment brief
             report.append(f"[CASH DEFICIT] DAY: {days[index]}, AMOUNT: USD{deficits[index]}\n")
+        #create a file to txt file and name it as "summary_report.txt"
         fp = Path.cwd()/"summary_report.txt"
+        #cash-on-hand portion of the summary report will be appended into the txt file using append mode and .writelines()
+        #.writelines() only works for lists and report is a list
         with fp.open(mode = "a", encoding = "UTF-8") as file:
             file.writelines(report)
