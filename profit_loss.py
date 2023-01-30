@@ -22,6 +22,7 @@ def profitloss_function():
     deficits = []
     #create "days" variable as an empty list to store the day numbers
     days = []
+    #create previous day list variable with 0 as the day number and 0 as the net profit amount
     previous_day = [0,0]
     for current_day in data:
         if float(current_day[1]) < float(previous_day [1]):
