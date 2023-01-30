@@ -34,8 +34,11 @@ def coh_function():
             #use float() to convert strings into floats
             #"difference" is found by taking previous day cash-on-hand minus current day cash-on-hand
             difference = float(previous_day[1]) - float(current_day[1])
+            #append "day_number" to "days" list using .append()
             days.append(day_number)
+            #append "difference" to "deficits" list using .append()
             deficits.append(difference)
+        #once an iteration is completed, the previous day values will be the current day values
         previous_day = current_day
     if len(deficits) == 0:
         fp = Path.cwd()/"summary_report.txt"
