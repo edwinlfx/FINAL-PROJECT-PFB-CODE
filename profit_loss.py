@@ -29,6 +29,7 @@ def profitloss_function():
         #use if statement to find out if the net profit of the current day is lower than the net profit of the previous day
         #use float() to convert from string to float when comparing because the net profit would still be a string if not converted
         if float(current_day[1]) < float(previous_day [1]):
+            #if true, create day_number variable to store current_day number
             day_number = current_day[0]
             difference = float(previous_day[1]) - float(current_day[1])
             days.append(day_number)
