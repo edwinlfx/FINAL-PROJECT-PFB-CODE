@@ -26,7 +26,9 @@ def overhead_function():
     #use for loop to iterate over the number of items in the overheads list
     #the highest overhead category and percentage from the overheads list will be appended into highest overhead list
     for item in overheads:
+        #use if statement to find out if the percentage in the overheads list is higher than the percentage in the highest overheead list
         if float(item[1]) > float(highest_overhead[1]):
+            #if true, highest overhead list will be the item from the4 overheads list used for the comparison
             highest_overhead = item
 
     fp=Path.cwd()/"summary_report.txt"
