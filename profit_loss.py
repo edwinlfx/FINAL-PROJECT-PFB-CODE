@@ -20,6 +20,7 @@ def profitloss_function():
             
     #create "deficits" variable as an empty list to store deficit amount        
     deficits = []
+    #create "days" variable as an empty list to store the day numbers
     days = []
     previous_day = [0,0]
     for current_day in data:
