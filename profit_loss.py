@@ -17,6 +17,8 @@ def profitloss_function():
         #column[0] is the day number and column [4] is the corresponding amount of net profit of that day itself
         for column in reader:
             data.append([column[0], column[4]])
+            
+    #create "deficits" variable as an empty list to store deficit amount        
     deficits = []
     days = []
     previous_day = [0,0]
