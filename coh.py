@@ -16,7 +16,7 @@ def coh_function():
         #use for loop to append day number and cash-on-hand of that day itself into the data empty list 
         #column[0] is the day number and column[1] is the corresponding amount of cash-on-hand of that day itself
         for column in reader:
-            data.append([column[0]], [column[1]])
+            data.append([column[0], column[1]])
     #create "deficits" variable as an empty list to store deficit amount
     deficits = []
     #create "days" variable as an empty list to store the day numbers
